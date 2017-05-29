@@ -5,6 +5,11 @@ const sequelize = new Sequelize(config.dbUrl, {
   logging: false
 })
 
+sequelize
+  .authenticate()
+  .then(() => console.log('Connect to mysql/mariadb successfully'))
+  .then(() => console.error(`Can not connect to the mysql/mariadb (${config.dbUrl})`))
+
 const Post = sequelize.define('post', {
   pid: {
     type: Sequelize.INTEGER,
