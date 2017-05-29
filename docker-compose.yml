@@ -7,6 +7,7 @@ services:
         - "3000:3000"
     volumes:
         - .:/usr/src/app
+        - node_modules:/usr/src/app/node_modules
     restart: always
     depends_on:
         - mariadb
@@ -18,3 +19,6 @@ services:
        MYSQL_ROOT_PASSWORD: "ptbin"
        MYSQL_DATABASE: "ptbin"
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+
+volumes:
+    node_modules:
