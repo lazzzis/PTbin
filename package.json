@@ -1,0 +1,31 @@
+{
+  "name": "ptbin",
+  "version": "1.0.0",
+  "description": "a simple pastebin",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon app.js -e .js,.pug",
+    "start": "NODE_ENV=production node app.js"
+  },
+  "author": "lazzzis",
+  "license": "MIT",
+  "dependencies": {
+    "code-highlight-linenums": "0.2.1",
+    "highlightjs": "9.10.0",
+    "koa": "2.2.0",
+    "koa-body": "2.0.1",
+    "koa-logger": "3.0.0",
+    "koa-pug": "3.0.0-2",
+    "koa-router": "7.2.0",
+    "koa-static": "3.0.0",
+    "koa-static-cache": "5.0.1",
+    "moment": "2.18.1",
+    "mysql": "2.13.0",
+    "mysql2": "1.2.0",
+    "sequelize": "3.30.4"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0"
+  }
+}

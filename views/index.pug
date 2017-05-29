@@ -1,0 +1,31 @@
+extends base.pug
+
+block container
+    form(method="post" action="/" id="form")
+        label(
+            aria-label="This is required"
+            for="author"
+        ) Author
+        input(
+            type="text"
+            name="author"
+            placeholder="Your name (Required)"
+            id="author"
+        )
+        label Language
+        select(name="language")
+            option(value="") Plain Text
+            each name in languages
+                option(value=name) #{name}
+        label(
+            aria-label="This is required"
+            for="content"
+        ) Content
+        textarea(
+            rows="15"
+            name="content"
+            id="content"
+            placeholder="Paste it here"
+        )
+        b(id="warning") This is a warning
+        button(type="submit") Paste

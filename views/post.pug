@@ -1,0 +1,21 @@
+extends base.pug
+
+block container
+    div.paste
+        p
+            | post by 
+            strong
+                = author
+            |  at 
+            strong
+                = createdAt
+        div
+            a.button.button-clear(href=`/${pid}/raw`) View Raw Text
+            button.button.button-outline.copy(data-clipboard-target="code.hljs") Click to copy
+
+        pre
+            code.hljs !{content}
+        
+        div
+            a.button.button-clear(href=`/${pid}/raw`) View Raw Text
+            button.button.button-outline.copy(data-clipboard-target="code.hljs") Click to copy
