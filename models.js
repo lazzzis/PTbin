@@ -8,9 +8,14 @@ const sequelize = new Sequelize(config.dbUrl, {
 sequelize
   .authenticate()
   .then(() => console.log('Connect to mysql/mariadb successfully'))
-  .catch(() => {
+  .catch(async () => {
     // exit could force docker to restart until it can connect mariadb
     console.error(`Can not connect to the mysql/mariadb (${config.dbUrl})`)
+    sequelize.close()
+    // wait for 2 seconds to exit
+    await new Promise((resolve) => {
+      setTimeout(() => resolve(), 2000)
+    })
     process.exit(-1)
   })
 
