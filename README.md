@@ -8,9 +8,9 @@ Visit [Demo](http://acm.cjlu.edu.cn/gist)
 
 ## SCREENSHOTS
 
-![](https://c1.staticflickr.com/5/4219/34805329622_10b88dc6b2_c.jpg)
+![](https://c1.staticflickr.com/5/4219/34805329622_e7d0fc7795_k.jpg)
 
-![](https://c1.staticflickr.com/5/4225/34805330852_36f4956723_c.jpg)
+![](https://c1.staticflickr.com/5/4225/34805330852_a8dff6bfff_k.jpg)
 
 There are two ways to install it.
 
