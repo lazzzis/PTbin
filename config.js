@@ -1,7 +1,7 @@
 module.exports = {
   port: 3000,
   title: 'PTbin',
-  dbUrl: 'mysql://root:ptbin@mariadb/test',
+  dbUrl: 'mysql://root:ptbin@mariadb/ptbin',
   languages: [
     '1C',
     'ABNF',

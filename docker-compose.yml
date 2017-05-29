@@ -16,5 +16,5 @@ services:
     restart: always
     environment:
        MYSQL_ROOT_PASSWORD: "ptbin"
-       MYSQL_DATABASE: "test"
+       MYSQL_DATABASE: "ptbin"
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
