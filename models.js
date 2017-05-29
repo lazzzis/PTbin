@@ -8,7 +8,11 @@ const sequelize = new Sequelize(config.dbUrl, {
 sequelize
   .authenticate()
   .then(() => console.log('Connect to mysql/mariadb successfully'))
-  .then(() => console.error(`Can not connect to the mysql/mariadb (${config.dbUrl})`))
+  .catch(() => {
+    // exit could force docker to restart until it can connect mariadb
+    console.error(`Can not connect to the mysql/mariadb (${config.dbUrl})`)
+    process.exit(-1)
+  })
 
 const Post = sequelize.define('post', {
   pid: {
