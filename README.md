@@ -16,12 +16,16 @@ There are two ways to install it.
 
 ## Docker
 
+![Node Version](https://img.shields.io/badge/node-7.10-brightgreen.svg?style=flat-square) ![Mariadb Version](https://img.shields.io/badge/mariadb-10.3-brightgreen.svg?style=flat-square)
+
 1. git clone it: `git clone https://github.com/lazzzis/PTbin.git`
 2. In the project directory, input command `docker-compose up`。If you want it to run in daemon mode, input command `docker-compose up -d`.
 
 That's all. Visit `127.0.0.1:5050` in the browser then you can see the website.
 
 ## Manually Install
+
+![Node Version](https://img.shields.io/badge/node->%3D7.6.0-brightgreen.svg?style=flat-square)
 
 1. git clone it: `git clone https://github.com/lazzzis/PTbin.git`
 2. install dependencies: `npm install`
